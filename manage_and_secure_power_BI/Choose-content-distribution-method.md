@@ -1,185 +1,65 @@
-# Power BI PL-300 - Share, Govern and Monitor Content
+# PL-300 Study Notes: Share, Govern, and Monitor Power BI Content
  
-## Sharing Models
+## Overview
  
-### Workspace Roles
+Creating reports and dashboards is only part of a Power BI solution. Once insights are created, they must be:
  
-| Role | Access |
-|--------|---------|
-| Viewer | View Only |
-| Contributor | Create/Edit/Delete Content |
-| Member | Contributor + Manage Apps |
-| Admin | Full Control |
+- Shared with the correct users
+- Secured against unauthorized access
+- Governed according to company policies
+- Monitored to measure adoption and performance
  
-### Key Points
+This module focuses on:
  
-- Workspace roles are all-or-nothing.
-- Users can access all workspace content.
-- RLS is enforced only for Viewers.
- 
----
- 
-## Item-Level Sharing
- 
-Used to share specific:
- 
-- Reports
-- Dashboards
- 
-Benefits:
- 
-- Granular access
-- Better security
-- Useful for external users
- 
-Sharing options:
- 
-- People in organization
-- People with existing access
-- Specific people
+- Workspace Roles
+- Item-Level Sharing
+- Power BI Apps
+- Org Apps
+- Audiences
+- Data Governance
+- Endorsements
+- Sensitivity Labels
+- Subscriptions
+- Usage Metrics
  
 ---
  
-## Power BI Apps
+# 1. Understanding Sharing Models
  
-Purpose:
+Power BI provides three primary methods for sharing content.
  
-- Distribute multiple reports/dashboards together.
+```text
+Workspace Roles
+↓
+Item-Level Sharing
+↓
+Power BI Apps
+```
  
-Benefits:
- 
-- Easy management
-- Controlled updates
-- Better user experience
- 
-Rule:
- 
-- One Workspace App per workspace.
+Each method is designed for different business requirements.
  
 ---
  
-## Org Apps
+# 2. Workspace Roles
  
-Advantages:
+A workspace is a collaborative environment where Power BI content such as reports, dashboards, and semantic models is stored.
  
-- Multiple apps per workspace
-- Immediate updates after saving
-- No installation required
-- Supports notebooks and real-time dashboards
+Workspace roles determine what actions users can perform.
  
----
+## Important Concept
  
-## Create Power BI App
+Workspace access follows an:
  
-1. Create App
-2. Add Content
-3. Publish App
+```text
+All-or-Nothing Model
+```
  
-Update:
+If a user has workspace access, they can access ALL content within that workspace.
  
-1. Edit App
-2. Make Changes
-3. Update App
- 
-Unpublish:
- 
-- More Options (...)
-- Unpublish App
+You cannot selectively hide reports from users who have workspace access.
  
 ---
  
-## Audiences
+## Viewer Role
  
-Audience = Users who see specific content.
- 
-Benefits:
- 
-- One app for multiple departments
-- Better security
-- Easier management
- 
-Limits:
- 
-- 25 audiences per app
-- 10,000 users/groups
- 
----
- 
-## Data Governance
- 
-### Promotion
- 
-- Recommended content
-- Set by content owner
- 
-### Certification
- 
-- Official trusted content
-- Approved by authorized reviewers
- 
-Hierarchy:
- 
-Certified > Promoted
- 
----
- 
-## Sensitivity Labels
- 
-Examples:
- 
-- Public
-- General
-- Confidential
-- Highly Confidential
- 
-Benefits:
- 
-- Security
-- Compliance
-- Label persists when exported
- 
-Supported exports:
- 
-- Excel
-- PDF
-- PowerPoint
- 
----
- 
-## Subscriptions
- 
-Allows automatic email delivery of:
- 
-- Reports
-- Dashboards
- 
-Frequency:
- 
-- Hourly
-- Daily
-- Weekly
-- Monthly
- 
-Premium workspaces support:
- 
-- PDF attachments
-- PowerPoint attachments
- 
----
- 
-## Usage Metrics
- 
-Tracks:
- 
-- Report views
-- Unique viewers
-- User activity
-- Load time
-- Performance trends
- 
-Requirements:
- 
-- Pro or PPU license
-- Contributor role or higher
-- Metrics enabled by admin
-
+The Viewer role is the most restrictive role.
